@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app" ng-controller="mainController">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -59,6 +59,9 @@
         <h1 class="display-3">Hello, world!</h1>
         <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+
+        <li ng-repeat="item in items"><span ng-bind="item.name">: <span ng-bind="item.age"></li>
+
       </div>
     </div>
 
@@ -95,9 +98,12 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="static/js/tether.min.js"></script>
     <script src="static/js/jquery.min.js"></script>
-    <script src="static/js/popper.min.js"></script>
     <script src="static/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="static/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Main application script -->
+    <script src="static/js/angular.js"></script>
+    <script src="static/js/app-main.js"></script>
   </body>
 </html>
